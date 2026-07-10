@@ -1,11 +1,6 @@
 package pe.edu.practica.rest.services;
 
-import jakarta.ws.rs.Consumes;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.POST;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.PathParam;
-import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import pe.edu.practica.bl.DispositivoUsuarioBL;
 import pe.edu.practica.model.DispositivoUsuario;
@@ -27,11 +22,38 @@ public class DispositivoUsuarioRS {
         return dispositivoBL.insertar(dispositivo);
     }
 
-    // El ID viaja directamente en la ruta
     @GET
-    @Path("/{idUsuario}")
+    @Path("/usuario/{idUsuario}")
     @Produces(MediaType.APPLICATION_JSON)
     public List<DispositivoUsuario> listarPorUsuario(@PathParam("idUsuario") int idUsuario) {
         return dispositivoBL.listarPorUsuario(idUsuario);
+    }
+
+    @GET
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public DispositivoUsuario buscarPorId(@PathParam("id") int id) {
+        return dispositivoBL.buscarPorId(id);
+    }
+
+    @GET
+    @Path("/activos/{idUsuario}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<DispositivoUsuario> listarActivosPorUsuario(@PathParam("idUsuario") int idUsuario) {
+        return dispositivoBL.listarActivosPorUsuario(idUsuario);
+    }
+
+    @PUT
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public int actualizar(DispositivoUsuario dispositivo) {
+        return dispositivoBL.actualizar(dispositivo);
+    }
+
+    @DELETE
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public int eliminar(@PathParam("id") int id) {
+        return dispositivoBL.eliminar(id);
     }
 }
