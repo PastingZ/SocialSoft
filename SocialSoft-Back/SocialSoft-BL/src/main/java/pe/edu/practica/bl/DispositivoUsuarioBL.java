@@ -19,10 +19,40 @@ public class DispositivoUsuarioBL {
         int resultado = 0;
         Connection conexion = null;
         try {
-            // Validacion 2: Límite de dispositivos (Hardcodeado a 3 para el ejemplo del examen)
+            // Validacion 2: Límite de dispositivos dinámico según el plan del usuario
+            pe.edu.practica.dao.UsuarioCanalSuscripcionDAO suscripcionDAO = new pe.edu.practica.impl.UsuarioCanalSuscripcionDAOImpl();
+            pe.edu.practica.dao.PlanSuscripcionDAO planDAO = new pe.edu.practica.impl.PlanSuscripcionDAOImpl();
+            
+            int maxDispositivosPermitidos = 0;
+            java.util.List<pe.edu.practica.model.UsuarioCanalSuscripcion> suscripciones = suscripcionDAO.listarSuscripcionesPorUsuario(dispositivo.getUsuario().getId());
+            
+            for (pe.edu.practica.model.UsuarioCanalSuscripcion sub : suscripciones) {
+                if ("ACTIVO".equalsIgnoreCase(sub.getEstado()) || "ACTIVA".equalsIgnoreCase(sub.getEstado())) {
+                    pe.edu.practica.model.PlanSuscripcion plan = planDAO.buscarPorId(sub.getPlanSuscripcion().getId());
+                    if (plan != null) {
+                        int limitePlan = 0;
+                        String nombrePlan = plan.getNombre().toUpperCase();
+                        if (nombrePlan.contains("VIP")) {
+                            limitePlan = 4;
+                        } else if (nombrePlan.contains("PREMIUM")) {
+                            limitePlan = 2;
+                        } else if (nombrePlan.contains("BASIC") || nombrePlan.contains("BÁSIC")) {
+                            limitePlan = 1;
+                        }
+                        if (limitePlan > maxDispositivosPermitidos) {
+                            maxDispositivosPermitidos = limitePlan;
+                        }
+                    }
+                }
+            }
+
+            if (maxDispositivosPermitidos == 0) {
+                throw new Exception("El usuario no tiene planes activos que permitan registrar dispositivos.");
+            }
+
             int activos = dispositivoDAO.contarDispositivosActivos(dispositivo.getUsuario().getId());
-            if (activos >= 3) {
-                throw new Exception("Se alcanzó el límite máximo de dispositivos (3) para este usuario.");
+            if (activos >= maxDispositivosPermitidos) {
+                throw new Exception("Se alcanzó el límite máximo de dispositivos (" + maxDispositivosPermitidos + ") según sus planes contratados.");
             }
 
             conexion = DBManager.getInstance().getConnection();
