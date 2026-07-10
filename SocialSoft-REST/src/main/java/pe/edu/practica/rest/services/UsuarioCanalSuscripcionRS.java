@@ -78,4 +78,5 @@ public class UsuarioCanalSuscripcionRS {
     public int eliminar(@PathParam("id") int id) {
         return suscripcionBL.eliminar(id);
     }
+
 }
