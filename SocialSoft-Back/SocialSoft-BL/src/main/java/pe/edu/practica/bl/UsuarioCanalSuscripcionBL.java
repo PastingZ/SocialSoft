@@ -24,6 +24,15 @@ public class UsuarioCanalSuscripcionBL {
         int idSuscripcionGenerado = 0;
         Connection conexion = null;
         try {
+            // Validacion 1: Evitar suscripciones duplicadas
+            int duplicados = suscripcionDAO.contarSuscripcionesActivas(
+                suscripcion.getUsuario().getId(), 
+                suscripcion.getCanal().getId()
+            );
+            if (duplicados > 0) {
+                throw new Exception("El usuario ya se encuentra suscrito a este canal de forma activa.");
+            }
+
             conexion = DBManager.getInstance().getConnection();
             conexion.setAutoCommit(false);
             

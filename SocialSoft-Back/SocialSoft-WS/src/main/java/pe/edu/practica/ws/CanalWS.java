@@ -5,6 +5,7 @@ import jakarta.jws.WebParam;
 import jakarta.jws.WebService;
 import pe.edu.practica.bl.CanalBL;
 import pe.edu.practica.model.Canal;
+import pe.edu.practica.model.ReporteCanalDTO;
 
 import java.util.List;
 
@@ -44,5 +45,10 @@ public class CanalWS {
     @WebMethod(operationName = "eliminarCanal")
     public int eliminarCanal(@WebParam(name = "id") int id) {
         return canalBL.eliminar(id);
+    }
+
+    @WebMethod(operationName = "listarTopCanalesActivos")
+    public List<ReporteCanalDTO> listarTopCanalesActivos() {
+        return canalBL.listarTopCanalesActivos();
     }
 }

@@ -9,5 +9,6 @@ public interface DispositivoUsuarioDAO {
     DispositivoUsuario buscarPorId(int id);
     List<DispositivoUsuario> listarActivosPorUsuario(int idUsuario);
     int actualizar(DispositivoUsuario dispositivo);
+    int contarDispositivosActivos(int idUsuario);
     int eliminar(int id);
 }

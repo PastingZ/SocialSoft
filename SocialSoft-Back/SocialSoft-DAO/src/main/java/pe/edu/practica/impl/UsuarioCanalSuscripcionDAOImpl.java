@@ -141,6 +141,25 @@ public class UsuarioCanalSuscripcionDAOImpl implements UsuarioCanalSuscripcionDA
         return resultado;
     }
 
+    @Override
+    public int contarSuscripcionesActivas(int idUsuario, int idCanal) {
+        int conteo = 0;
+        String sql = "SELECT COUNT(*) FROM usuario_canal_suscripcion WHERE id_usuario = ? AND id_canal = ? AND estado = 'ACTIVO'";
+        try {
+            Connection conexion = DBManager.getInstance().getConnection();
+            PreparedStatement pst = conexion.prepareStatement(sql);
+            pst.setInt(1, idUsuario);
+            pst.setInt(2, idCanal);
+            ResultSet rs = pst.executeQuery();
+            if (rs.next()) {
+                conteo = rs.getInt(1);
+            }
+        } catch (Exception ex) {
+            System.err.println("Error al contar suscripciones activas: " + ex.getMessage());
+        }
+        return conteo;
+    }
+
     private UsuarioCanalSuscripcion mapear(ResultSet rs) throws Exception {
         UsuarioCanalSuscripcion ucs = new UsuarioCanalSuscripcion();
         ucs.setId(rs.getInt("id"));

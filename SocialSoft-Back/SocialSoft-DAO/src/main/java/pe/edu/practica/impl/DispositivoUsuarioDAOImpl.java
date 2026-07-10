@@ -120,6 +120,24 @@ public class DispositivoUsuarioDAOImpl implements DispositivoUsuarioDAO {
         return resultado;
     }
 
+    @Override
+    public int contarDispositivosActivos(int idUsuario) {
+        int conteo = 0;
+        String sql = "SELECT COUNT(*) FROM dispositivo_usuario WHERE id_usuario = ? AND activo = 1";
+        try {
+            Connection conexion = DBManager.getInstance().getConnection();
+            PreparedStatement pst = conexion.prepareStatement(sql);
+            pst.setInt(1, idUsuario);
+            ResultSet rs = pst.executeQuery();
+            if (rs.next()) {
+                conteo = rs.getInt(1);
+            }
+        } catch (Exception ex) {
+            System.err.println("Error al contar dispositivos activos: " + ex.getMessage());
+        }
+        return conteo;
+    }
+
     private DispositivoUsuario mapear(ResultSet rs) throws Exception {
         DispositivoUsuario d = new DispositivoUsuario();
         d.setId(rs.getInt("id"));

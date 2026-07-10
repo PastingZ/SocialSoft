@@ -11,17 +11,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7920ba10-6c25-4e7b-b246-e4b58c835a77" name="Changes" comment="dbmanager">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialSoft-REST/src/main/java/pe/edu/practica/rest/services/MetodoPagoRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-REST/src/main/java/pe/edu/practica/rest/services/MetodoPagoRS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/BeneficioWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/BeneficioWS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocialSoft-BL/src/main/java/pe/edu/practica/bl/CanalBL.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-BL/src/main/java/pe/edu/practica/bl/CanalBL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocialSoft-BL/src/main/java/pe/edu/practica/bl/DispositivoUsuarioBL.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-BL/src/main/java/pe/edu/practica/bl/DispositivoUsuarioBL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocialSoft-BL/src/main/java/pe/edu/practica/bl/UsuarioCanalSuscripcionBL.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-BL/src/main/java/pe/edu/practica/bl/UsuarioCanalSuscripcionBL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/dao/CanalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/dao/CanalDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/dao/DispositivoUsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/dao/DispositivoUsuarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/dao/UsuarioCanalSuscripcionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/dao/UsuarioCanalSuscripcionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/impl/CanalDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/impl/CanalDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/impl/DispositivoUsuarioDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/impl/DispositivoUsuarioDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/impl/UsuarioCanalSuscripcionDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-DAO/src/main/java/pe/edu/practica/impl/UsuarioCanalSuscripcionDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/CanalWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/CanalWS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/DispositivoUsuarioWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/DispositivoUsuarioWS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/MetodoPagoWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/MetodoPagoWS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/PagoSuscripcionWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/PagoSuscripcionWS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/PlanSuscripcionWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/PlanSuscripcionWS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/ResolucionWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/ResolucionWS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/UsuarioCanalSuscripcionWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/UsuarioCanalSuscripcionWS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/UsuarioWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/SocialSoft-WS/src/main/java/pe/edu/practica/ws/UsuarioWS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/Form1.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/Form1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/bin/Debug/net8.0-windows/SocialSoft.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/bin/Debug/net8.0-windows/SocialSoft.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/bin/Debug/net8.0-windows/SocialSoft.Client.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/bin/Debug/net8.0-windows/SocialSoft.Client.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/bin/Debug/net8.0-windows/SocialSoft.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/bin/Debug/net8.0-windows/SocialSoft.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/SocialSoft.Client.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/ref/SocialSoft.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/ref/SocialSoft.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/refint/SocialSoft.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/Debug/net8.0-windows/refint/SocialSoft.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/SocialSoft.Client.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/SocialSoft.Client.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocialSoft-Front/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialSoft-Front/obj/project.nuget.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +58,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -80,31 +101,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;GlassFish Server.GlassFish 8.0.3.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kenny/Desktop/FCI/progra3/labs/Pre_Finales/CASO 1- SOCIALSOFT/REST/SocialSoft&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "GlassFish Server.GlassFish 8.0.3.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/kenny/Desktop/FCI/progra3/labs/Pre_Finales/CASO 1- SOCIALSOFT/SocialSoftProject/SocialSoft-Back",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationStatuses">
       <map>
@@ -120,6 +141,7 @@
   </component>
   <component name="RunManager">
     <configuration name="GlassFish 8.0.3" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 8.0.3" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="SocialSoft-REST:war exploded">
           <settings />
@@ -188,7 +210,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="SocialSoft-REST:war exploded" />
           <artifact name="SocialSoft-WS:war exploded" />
         </option>
       </method>
@@ -214,6 +235,7 @@
       <workItem from="1783635567780" duration="2353000" />
       <workItem from="1783642811610" duration="505000" />
       <workItem from="1783699106692" duration="3049000" />
+      <workItem from="1783706496600" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="REST SERVICES">
       <option name="closed" value="true" />

@@ -19,6 +19,12 @@ public class DispositivoUsuarioBL {
         int resultado = 0;
         Connection conexion = null;
         try {
+            // Validacion 2: Límite de dispositivos (Hardcodeado a 3 para el ejemplo del examen)
+            int activos = dispositivoDAO.contarDispositivosActivos(dispositivo.getUsuario().getId());
+            if (activos >= 3) {
+                throw new Exception("Se alcanzó el límite máximo de dispositivos (3) para este usuario.");
+            }
+
             conexion = DBManager.getInstance().getConnection();
             conexion.setAutoCommit(false);
             resultado = dispositivoDAO.insertar(dispositivo);

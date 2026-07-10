@@ -1,6 +1,6 @@
-﻿namespace SocialSoft.Client;
+namespace SocialSoft.Client;
 
-partial class Form1
+partial class FormEjemploConsumirWS
 {
     /// <summary>
     ///  Required designer variable.

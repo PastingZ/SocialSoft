@@ -4,6 +4,7 @@ import pe.edu.practica.dao.CanalDAO;
 import pe.edu.practica.impl.CanalDAOImpl;
 import pe.edu.practica.dbmanager.DBManager;
 import pe.edu.practica.model.Canal;
+import pe.edu.practica.model.ReporteCanalDTO;
 
 import java.sql.Connection;
 import java.util.List;
@@ -106,5 +107,19 @@ public class CanalBL {
             try { if (conexion != null) conexion.close(); } catch (Exception e) {}
         }
         return resultado;
+    }
+
+    public List<ReporteCanalDTO> listarTopCanalesActivos() {
+        List<ReporteCanalDTO> lista = null;
+        Connection conexion = null;
+        try {
+            conexion = DBManager.getInstance().getConnection();
+            lista = canalDAO.listarTopCanalesActivos();
+        } catch (Exception ex) {
+            System.err.println("Error en BL al listar top canales activos: " + ex.getMessage());
+        } finally {
+            try { if (conexion != null) conexion.close(); } catch (Exception e) {}
+        }
+        return lista;
     }
 }

@@ -3,6 +3,7 @@ package pe.edu.practica.impl;
 import pe.edu.practica.dao.CanalDAO;
 import pe.edu.practica.dbmanager.DBManager;
 import pe.edu.practica.model.Canal;
+import pe.edu.practica.model.ReporteCanalDTO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -123,6 +124,26 @@ public class CanalDAOImpl implements CanalDAO {
             System.err.println("Error al eliminar canal: " + ex.getMessage());
         }
         return resultado;
+    }
+
+    @Override
+    public List<ReporteCanalDTO> listarTopCanalesActivos() {
+        List<ReporteCanalDTO> lista = new ArrayList<>();
+        String sql = "SELECT c.nombre, COUNT(ucs.id) as cantidad FROM canal c INNER JOIN usuario_canal_suscripcion ucs ON c.id = ucs.id_canal WHERE ucs.estado = 'ACTIVO' GROUP BY c.id ORDER BY cantidad DESC LIMIT 3";
+        try {
+            Connection conexion = DBManager.getInstance().getConnection();
+            PreparedStatement pst = conexion.prepareStatement(sql);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()) {
+                ReporteCanalDTO dto = new ReporteCanalDTO();
+                dto.setNombreCanal(rs.getString("nombre"));
+                dto.setCantidadSuscripciones(rs.getInt("cantidad"));
+                lista.add(dto);
+            }
+        } catch (Exception ex) {
+            System.err.println("Error al listar top canales activos: " + ex.getMessage());
+        }
+        return lista;
     }
 
     private Canal mapear(ResultSet rs) throws Exception {

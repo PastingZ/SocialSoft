@@ -11,5 +11,6 @@ public interface UsuarioCanalSuscripcionDAO {
     List<UsuarioCanalSuscripcion> listarPorEstado(String estado);
     int actualizar(UsuarioCanalSuscripcion suscripcion);
     int cambiarEstado(int id, String nuevoEstado);
+    int contarSuscripcionesActivas(int idUsuario, int idCanal);
     int eliminar(int id);
 }
